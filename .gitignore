@@ -1,0 +1,16 @@
+# Godot
+.godot/
+export_credentials.cfg
+
+# .NET
+bin/
+obj/
+*.user
+.vs/
+TestResults/
+
+# Saída de exportação
+build/
+
+# Medições brutas
+docs/medicoes/*.raw.csv

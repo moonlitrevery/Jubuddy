@@ -1,0 +1,15 @@
+<Project Sdk="Godot.NET.Sdk/4.5.1">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <RootNamespace>Jubuddy</RootNamespace>
+    <Nullable>enable</Nullable>
+    <LangVersion>12</LangVersion>
+    <InvariantGlobalization>true</InvariantGlobalization>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Os testes são um projeto à parte (tests/), que compila só src/Core. -->
+    <Compile Remove="tests/**" />
+    <None Remove="tests/**" />
+  </ItemGroup>
+</Project>

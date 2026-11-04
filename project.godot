@@ -1,0 +1,56 @@
+; Jubuddy — configuração do projeto Godot.
+; As escolhas aqui são quase todas de desempenho: ele roda enquanto você joga.
+
+config_version=5
+
+[application]
+
+config/name="Jubuddy"
+config/description="Um quarto 3D com um buddy morando no fundo da área de trabalho."
+config/version="0.1.0"
+run/main_scene="res://scenes/Main.tscn"
+config/use_custom_user_dir=true
+config/custom_user_dir_name="Jubuddy"
+config/features=PackedStringArray("4.5", "C#")
+config/icon="res://icon.svg"
+run/low_processor_mode=true
+run/max_fps=30
+boot_splash/show_image=false
+boot_splash/bg_color=Color(0.18, 0.2, 0.25, 1)
+
+[audio]
+
+driver/driver="Dummy"
+
+[debug]
+
+file_logging/max_log_files=3
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=800
+window/size/borderless=true
+window/energy_saving/keep_screen_on=false
+window/vsync/vsync_mode=0
+window/per_pixel_transparency/allowed=true
+window/subwindows/embed_subwindows=true
+
+[dotnet]
+
+project/assembly_name="Jubuddy"
+
+[threading]
+
+worker_pool/max_threads=2
+
+[physics]
+
+common/physics_ticks_per_second=10
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+anti_aliasing/quality/msaa_3d=1
+environment/defaults/default_clear_color=Color(0.18, 0.2, 0.25, 1)
